@@ -91,6 +91,24 @@
 
 /* Responsive de la pagina web como maximo 750px */
 @media screen and (max-width: 750px) {
+    .modal{
+        .modal-dialog{
+            margin: 0.1px;
+            .modal-content{
+                .modal-body{
+                    padding: 0;
+                    .table{
+                        thead{
+                            th{
+                                padding: 0;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .cuotas img{
         width: 100%;
         height: 2rem;
@@ -103,6 +121,9 @@
         width: 95%;
         margin: 20px auto;
         padding: 10px;
+        input{
+            padding-top: 5px;
+        }
     }
     .formulario input{
         width: 95%;

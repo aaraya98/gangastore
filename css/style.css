@@ -118,6 +118,10 @@
 .table tbody tr td:last-child button i{
     color: red;
 }
+.modal-content .modal-footer{
+    justify-content: center;
+    align-items: center;
+}
 /* Tuve que incluir este hover puesto que el boostrap tiene un hover de etiqueta y que vuelve las letras azules */
 .seca a:hover, .btncarro:hover{
     text-decoration: none;
@@ -365,6 +369,7 @@
 }
 .cartplus i{
     font-size: 2rem;
+    height: 2.1rem;
 }
 
 /*  */
