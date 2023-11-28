@@ -186,9 +186,14 @@
     height: 3rem;
 }
 
+
+/* Esto esta comentado porque intente hacerlo por SASS */
+/* y me funciono correctamente el slider con sass
+ */
+
 /* Estyle for Index */
 /* slider de promociones */
-#sliderpromo{
+/* #sliderpromo{
     width: 100%;
     height: auto;
     margin: 5px auto 0;
@@ -222,7 +227,8 @@
 
     80%{margin-left: -300%;}
     100%{margin-left: -300%;}
-}
+} */
+  
 /* Sección de promociones y lanzamientos */
 .namepromo{
     width: 75%;

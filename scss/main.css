@@ -1,0 +1,49 @@
+#sliderpromo {
+  width: 100%;
+  height: auto;
+  margin: 5px auto 0;
+  overflow: hidden;
+}
+#sliderpromo ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0);
+  animation: slidepromo 20s infinite alternate ease-in-out;
+}
+#sliderpromo ul li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+#sliderpromo ul li a img {
+  width: 100%;
+  height: 30rem;
+}
+
+@keyframes slidepromo {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -200%;
+  }
+  80% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}/*# sourceMappingURL=main.css.map */
