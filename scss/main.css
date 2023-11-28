@@ -110,7 +110,7 @@
   .modal .modal-dialog .modal-content .modal-body {
     padding: 0;
   }
-  .modal .modal-dialog .modal-content .modal-body .table thead th {
+  .modal .modal-dialog .modal-content .modal-body .table thead tr th {
     padding: 0;
     padding-right: 10px;
   }

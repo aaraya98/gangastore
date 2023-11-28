@@ -99,9 +99,11 @@
                     padding: 0;
                     .table{
                         thead{
-                            th{
-                                padding: 0;
-                                padding-right: 10px;
+                            tr{
+                                th{
+                                    padding: 0;
+                                    padding-right: 10px;
+                                }
                             }
                         }
                     }
