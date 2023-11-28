@@ -228,9 +228,8 @@
     80%{margin-left: -300%;}
     100%{margin-left: -300%;}
 } */
-  
 /* Sección de promociones y lanzamientos */
-.namepromo{
+/* .namepromo{
     width: 75%;
     margin: auto;
     text-align: center;
@@ -279,7 +278,7 @@
 .promocionthree a img{
     width: 100%;
     height: 100%;
-}
+} */
 /* Sección de ofertas(ZG-COMPUTACIÓN-COMPONENTES) */
 #ofertasproduct{
     width: 100%;
@@ -721,8 +720,9 @@
     margin-right: 10%;
 }
 
+/* Todo el responsive paso a SASS */
 /* Responsive de index - login - recoveraccount - changepassword -contact */
-@media screen and (max-width: 750px){
+/* @media screen and (max-width: 750px){
     .cuotas img{
         width: 100%;
         height: 2rem;
@@ -846,8 +846,8 @@
         padding-left: 5%;
         margin-bottom: 35px;
     }
-}
-@media screen and (max-width: 1100px){
+} */
+/* @media screen and (max-width: 1100px){
     .seca{
         overflow: hidden;
         width: 75%;
@@ -860,4 +860,4 @@
         height: 2.2rem;
         transition: 0.3s;
     }
-}
+} */

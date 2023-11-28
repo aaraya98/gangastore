@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Slider Index */
 #sliderpromo {
   width: 100%;
   height: auto;
@@ -45,5 +47,206 @@
   }
   100% {
     margin-left: -300%;
+  }
+}
+/* Sección de promociones y lanzamientos */
+.namepromo {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(71, 6, 150, 0.7058823529);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+.namepromo h2 {
+  padding-top: 1%;
+  color: #dedede;
+}
+
+#promociones {
+  margin: auto;
+  margin-top: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  gap: 0.5rem;
+}
+#promociones .promocionone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+#promociones .promocionone a img {
+  width: 100%;
+  height: 100%;
+}
+#promociones .promociontwo {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+#promociones .promociontwo a img {
+  width: 100%;
+  height: 100%;
+}
+#promociones .promocionthree {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+#promociones .promocionthree a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive de la pagina web como maximo 750px */
+@media screen and (max-width: 750px) {
+  .cuotas img {
+    width: 100%;
+    height: 2rem;
+  }
+  #sliderpromo ul li a img {
+    width: 100%;
+    height: 13rem;
+  }
+  #sectionform {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .formulario input {
+    width: 95%;
+  }
+  .formulario button {
+    width: 60%;
+  }
+  .formrecover input {
+    width: 95%;
+  }
+  .formrecover button {
+    width: 95%;
+  }
+  .formcontact {
+    grid-template-columns: 1fr;
+  }
+  .formdata {
+    grid-column: span 2;
+  }
+  .textareaform {
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+  .senddata button {
+    grid-column: span 2;
+  }
+  #piepagina {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .logofooter {
+    margin-bottom: 20px;
+  }
+  .logofooter img {
+    width: 150px;
+    height: 150px;
+  }
+  .socialcontacto {
+    margin-top: 20px;
+    width: 95%;
+    border-bottom: 2px dashed black;
+  }
+  .socialcontacto,
+  .logomapa {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    gap: 3.5%;
+  }
+  .socialesmetodo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialesmetodo i,
+  .socialesmetodo .logomapa i {
+    font-size: x-large;
+  }
+  .logomapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialesmetodo span {
+    display: none;
+  }
+  .ubicacion {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-bottom: 2px dashed black;
+    width: 95%;
+  }
+  .ubi {
+    width: 95%;
+    height: 20rem;
+  }
+  .ubi i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  .ubi h3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .ubi iframe {
+    margin-bottom: 20px;
+  }
+  .serviciocliente {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-left: 5%;
+  }
+  .nosotros {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-bottom: 20px;
+  }
+}
+/* Responsive de la pagina web como maximo 1100px */
+@media screen and (max-width: 1100px) {
+  .seca {
+    overflow: hidden;
+    width: 75%;
+  }
+  .seca:hover {
+    width: 80%;
+    height: 2.2rem;
+    transition: 0.3s;
+  }
+  .btncarro {
+    width: 75%;
+  }
+  .btncarro:hover {
+    width: 80%;
+    height: 2.2rem;
+    transition: 0.3s;
   }
 }/*# sourceMappingURL=main.css.map */
