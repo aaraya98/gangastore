@@ -155,6 +155,36 @@
   .senddata button {
     grid-column: span 2;
   }
+  /* registeruser */
+  #formcontainer #sectionformreguser {
+    width: 97%;
+  }
+  #formcontainer #sectionformreguser .formreguser {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 auto);
+    height: auto;
+  }
+  #formcontainer #sectionformreguser .formreguser .reguserdataone {
+    grid-column: span 1;
+    grid-row: span 1;
+    height: auto;
+  }
+  #formcontainer #sectionformreguser .formreguser .reguserdatatwo {
+    grid-column: span 1;
+    grid-row: span 2;
+    height: auto;
+  }
+  #formcontainer #sectionformreguser .formreguser .reguserdatathree {
+    grid-column: span 1;
+    grid-row: span 3;
+    height: auto;
+  }
+  #formcontainer #sectionformreguser .formreguser .reguserdatafour {
+    grid-column: span 1;
+    grid-row: span 4;
+    height: auto;
+  }
   #piepagina {
     display: grid;
     grid-template-columns: 1fr;
