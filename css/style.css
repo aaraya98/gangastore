@@ -284,7 +284,7 @@
     height: 100%;
 } */
 /* Sección de ofertas(ZG-COMPUTACIÓN-COMPONENTES) */
-#ofertasproduct{
+.ofertasproduct{
     width: 100%;
     margin-top: 2rem;
 }
@@ -300,12 +300,6 @@
     padding: 0;
     gap: 1%;
 }
-.sectionname{
-    margin-top: 2rem;
-}
-.sectionname p{
-    text-align: center;
-}
 .productinfo{
     color: #333;
 }
@@ -313,7 +307,7 @@
     list-style: none;
     width: 15%;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .product:hover{
@@ -682,7 +676,7 @@
 }
 .ubi{
     display: grid;
-    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-columns: 0.15fr 0.85fr;
     grid-template-rows: 0.25fr 0.75fr;
     overflow: hidden;
     width: 80%;
@@ -696,10 +690,11 @@
 }
 .ubi h3{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-size: 1.6rem;
     margin: 0;
+    padding-left: 15px;
 }
 .ubi iframe{
     margin: auto;

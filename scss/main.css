@@ -104,6 +104,7 @@
 
 /* Responsive de la pagina web como maximo 750px */
 @media screen and (max-width: 750px) {
+  /* Header de todas las paginas */
   .modal .modal-dialog {
     margin: 0.1px;
   }
@@ -118,9 +119,67 @@
     width: 100%;
     height: 2rem;
   }
+  /* Index */
   #sliderpromo ul li a img {
     width: 100%;
     height: 13rem;
+  }
+  #promociones {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 auto);
+    gap: 0.5%;
+  }
+  #promociones .promocionone {
+    grid-column: span 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1%;
+  }
+  #promociones .promociontwo {
+    grid-column: span 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #promociones .promocionthree {
+    grid-column: span 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .namepromo {
+    width: 98%;
+  }
+  .ofertasproduct .products {
+    width: 98%;
+  }
+  .ofertasproduct .products .product {
+    width: 25%;
+  }
+  .ofertasproduct .products .product .productinfo .productname p {
+    font-size: x-small;
+  }
+  .ofertasproduct .products .product .productinfo .skuunits {
+    margin-top: 0;
+    font-size: 0.5rem;
+  }
+  .ofertasproduct .products .product .valuecart .value .productvalue span {
+    font-size: xx-small;
+  }
+  .ofertasproduct .products .product .valuecart .value .productprevalue span {
+    font-size: xx-small;
+  }
+  .ofertasproduct .products .product .valuecart .cartplus {
+    width: 40%;
+    height: auto;
+    padding: 0;
+  }
+  .ofertasproduct .products .product .valuecart .cartplus i {
+    font-size: x-large;
+    margin-top: 30%;
+  }
+  .ofertasproduct .products .product:nth-child(5), .ofertasproduct .products .product:nth-child(6) {
+    display: none;
   }
   #sectionform {
     width: 95%;
@@ -185,6 +244,7 @@
     grid-row: span 4;
     height: auto;
   }
+  /* Footer de todas las paginas */
   #piepagina {
     display: grid;
     grid-template-columns: 1fr;
