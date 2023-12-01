@@ -400,6 +400,7 @@
 .nameform h2{
     color: #333;
     text-align: center;
+    font-weight: bold;
 }
 .formulario{
     margin-top: 35px;
@@ -561,6 +562,7 @@
     gap: 1%;
 }
 .formreguser h3{
+    font-weight: bold;
     margin: 25px;
     height: 4rem;
 }
@@ -667,10 +669,6 @@
 }
 .socialesmetodo{
     padding: 10px;
-}
-.logomapa{
-    padding: 10px;
-    display: none;
 }
 .ubicacion{
     margin:auto;
@@ -783,7 +781,7 @@
         width: 95%;
         border-bottom: 2px dashed black;
     }
-    .socialcontacto, .logomapa{
+    .socialcontacto{
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 1;
@@ -796,13 +794,8 @@
         justify-content: center;
         align-items: center;
     }
-    .socialesmetodo i, .logomapa i{
+    .socialesmetodo i{
         font-size: x-large;
-    }
-    .logomapa{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .socialesmetodo span{
         display: none;
