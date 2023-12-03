@@ -1,5 +1,5 @@
 /* Estilo para toda la pagina */
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: 'Varela Round', sans-serif;
@@ -9,11 +9,11 @@
 :root{
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
-}
+} */
 
 /* Information de todas las paginas */
 /* Estilo para la información */
-#information{
+/* #information{
     width: 100%;
     height: auto;
     display: flex;
@@ -25,8 +25,9 @@
     color: white;
     font-size: clamp(0.9rem, 1vw, 2rem);
     margin: 5px;
-}
-/* Head de todas las paginas */
+} */
+
+/* Header de todas las paginas */
 /* Estilo para el head(incluye logo, bienvenida, buscador, sesion y carrito, menu y cuotas) */
 /* Primera sección de logo, buscador y sesión con carrito */
 .containercabezal{
@@ -643,7 +644,7 @@
 /*  */
 /* Footer de todas las paginas */
 /* Estilo para el footer(incluye logo con contacto, servicios e información de la empresa) */
-#piepagina{
+/* #piepagina{
     display: grid;
     grid-template-columns: repeat(4 1fr);
     grid-template-rows: 1fr;
@@ -729,7 +730,7 @@
     grid-column-start: 4;
     grid-column-end: 5;
     margin-right: 10%;
-}
+} */
 
 /* Todo el responsive paso a SASS */
 /* Responsive de index - login - recoveraccount - changepassword -contact */
