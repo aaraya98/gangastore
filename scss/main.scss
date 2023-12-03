@@ -92,6 +92,91 @@
 /* Responsive de la pagina web como maximo 750px */
 @media screen and (max-width: 750px){
     /* Header de todas las paginas */
+    #cabezal{
+        display: grid;
+        grid-template-rows: repeat(2 1fr);
+        grid-template-rows: repeat(4 auto);
+        .containercabezal{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            .logohead{
+                display: none;
+            }
+            .presearch{
+                .presentation{
+                    display: none;
+                }
+                .buscador{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+            }
+            .sesioncarro{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                }
+            }
+        #menuopciones{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            label{
+                font-size: 3rem;
+                text-align: center;
+            }
+            .checkbtn {
+                display: block;
+            }
+            ul {
+                position: absolute;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                background-color: antiquewhite;
+                z-index: 1000;
+                background-color: rgba(22, 196, 88, 0.4);
+                padding: 0;
+                background-color: #dedede;
+                li {
+                    padding: 25px;
+                    width: 100%;
+                    text-align: center;
+                    display: none;
+                    background-color: rgba(22, 196, 88, 0.4);
+                    a{
+                        font-size: large;
+                    }
+                }
+            }
+            ul:not(:checked) + label + li {
+                display: none;
+            }
+            input:checked + label + ul li {
+                display: block;
+            }
+            #check{
+                display: none;
+            }
+            #menuopciones:not(:focus-within) ul li {
+                display: none;
+            }
+        }
+        .cuotas{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    }
+
     .modal{
         .modal-dialog{
             margin: 0.1px;

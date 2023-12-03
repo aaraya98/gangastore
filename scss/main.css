@@ -105,6 +105,88 @@
 /* Responsive de la pagina web como maximo 750px */
 @media screen and (max-width: 750px) {
   /* Header de todas las paginas */
+  #cabezal {
+    display: grid;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-rows: repeat(4 auto);
+  }
+  #cabezal .containercabezal {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  #cabezal .containercabezal .logohead {
+    display: none;
+  }
+  #cabezal .containercabezal .presearch .presentation {
+    display: none;
+  }
+  #cabezal .containercabezal .presearch .buscador {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #cabezal .containercabezal .sesioncarro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #cabezal #menuopciones {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  #cabezal #menuopciones label {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #cabezal #menuopciones .checkbtn {
+    display: block;
+  }
+  #cabezal #menuopciones ul {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+    z-index: 1000;
+    background-color: rgba(22, 196, 88, 0.4);
+    padding: 0;
+    background-color: #dedede;
+  }
+  #cabezal #menuopciones ul li {
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    display: none;
+    background-color: rgba(22, 196, 88, 0.4);
+  }
+  #cabezal #menuopciones ul li a {
+    font-size: large;
+  }
+  #cabezal #menuopciones ul:not(:checked) + label + li {
+    display: none;
+  }
+  #cabezal #menuopciones input:checked + label + ul li {
+    display: block;
+  }
+  #cabezal #menuopciones #check {
+    display: none;
+  }
+  #cabezal #menuopciones #menuopciones:not(:focus-within) ul li {
+    display: none;
+  }
+  #cabezal .cuotas {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
   .modal .modal-dialog {
     margin: 0.1px;
   }
