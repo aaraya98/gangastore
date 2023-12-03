@@ -248,10 +248,12 @@
     }
 
     /* Index */
+    /* Slider de promociones */
     #sliderpromo ul li a img{
         width: 100%;
         height: 13rem;
     }
+    /* Promociones de imagenes */
     #promociones{
         width: 98%;
         display: grid;
@@ -275,10 +277,11 @@
             grid-row-end: 4;
         }
     }
-    .namepromo{
-        width: 98%;
-    }
+    /* Equipos en promoción */
     .ofertasproduct{
+        .namepromo{
+            width: 98%;
+        }
         .products{
             width: 98%;
             .product{
@@ -397,83 +400,83 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
-    }
-    .logofooter{
-        margin-bottom: 20px;
-    }
-    .logofooter img{
-        width: 150px;
-        height: 150px;
-    }
-    .socialcontacto{
-        margin-top: 20px;
-        width: 95%;
-        border-bottom: 2px dashed black;
-    }
-    .socialcontacto{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        display: flex;
-        gap: 3.5%;
-    }
-    .socialesmetodo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        i{
-            font-size: xx-large;
-            width: 3rem;
-            height: 3rem;
-        }
-    }
-    .socialesmetodo span{
-        display: none;
-    }
-    .ubicacion{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border-bottom: 2px dashed black;
-        width: 95%;
-    }
-    .ubi{
-        width: 95%;
-        height: 20rem;
-        i{
+        .socialcontacto{
+            margin-top: 20px;
+            width: 95%;
+            border-bottom: 2px dashed black;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
             display: flex;
             justify-content: center;
-            align-items: center;
-            font-size: 1.3rem;
+            align-content: center;
+            gap: 3.5%;
+            .logofooter{
+                margin-bottom: 20px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .socialesmetodo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: x-large;
+                    width: 1.5rem;
+                    height: 3rem;
+                }
+                span{
+                    display: none;
+                }
+            }
         }
-        h3{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            font-size: 1.4rem;
-            margin: 0;
+        .ubicacion{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            border-bottom: 2px dashed black;
+            width: 95%;
+            .ubi{
+                width: 95%;
+                height: 20rem;
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.3rem;
+                }
+                h3{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    font-size: 1.4rem;
+                    margin: 0;
+                }
+                iframe{
+                    margin-bottom: 20px;
+                }
+            }
         }
-        iframe{
+        .serviciocliente{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            padding-left: 5%;
+        }
+        .nosotros{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            margin-left: 5%;
+            padding-left: 5%;
             margin-bottom: 20px;
         }
-    }
-    .serviciocliente{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        padding-left: 5%;
-    }
-    .nosotros{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        margin-left: 5%;
-        padding-left: 5%;
-        margin-bottom: 20px;
     }
 }
 
