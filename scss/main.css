@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Index */
 /* Slider Index */
 #sliderpromo {
   width: 100%;
@@ -314,40 +315,40 @@
   .ofertasproduct .products .product:nth-child(5), .ofertasproduct .products .product:nth-child(6) {
     display: none;
   }
-  #sectionform {
+  /* Responsive de Login- Contact - Changepassword - registeruser - recoveraccount */
+  #formcontainer #sectionform {
     width: 95%;
     margin: 20px auto;
     padding: 10px;
   }
-  #sectionform input {
+  #formcontainer #sectionform input {
     padding-top: 5px;
   }
-  .formulario input {
+  #formcontainer #sectionform .formulario div input {
     width: 95%;
   }
-  .formulario button {
+  #formcontainer #sectionform .formulario div button {
     width: 60%;
   }
-  .formrecover input {
+  #formcontainer #sectionform .secciones .formrecover input {
     width: 95%;
   }
-  .formrecover button {
+  #formcontainer #sectionform .secciones .formrecover button {
     width: 95%;
   }
-  .formcontact {
+  #formcontainer #sectionform .formcontact {
     grid-template-columns: 1fr;
   }
-  .formdata {
+  #formcontainer #sectionform .formcontact .formdata {
     grid-column: span 2;
   }
-  .textareaform {
+  #formcontainer #sectionform .formcontact .textareaform {
     grid-row-start: 8;
     grid-row-end: 9;
   }
-  .senddata button {
+  #formcontainer #sectionform .formcontact .senddata button {
     grid-column: span 2;
   }
-  /* registeruser */
   #formcontainer #sectionformreguser {
     width: 97%;
   }
