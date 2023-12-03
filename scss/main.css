@@ -170,12 +170,12 @@
     font-size: xx-small;
   }
   .ofertasproduct .products .product .valuecart .cartplus {
-    width: 40%;
+    width: auto;
     height: auto;
     padding: 0;
   }
   .ofertasproduct .products .product .valuecart .cartplus i {
-    font-size: x-large;
+    font-size: larger;
     margin-top: 30%;
   }
   .ofertasproduct .products .product:nth-child(5), .ofertasproduct .products .product:nth-child(6) {
