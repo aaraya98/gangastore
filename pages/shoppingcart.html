@@ -115,31 +115,90 @@
 
     <!-- Sección de compras -->
     <main>
-        <section>
-            <!-- Aqui van los productos -->
+        <section id="shopproducts">
+            <div class="shopproduct">
+                <div class="imgshoppro">
+                    <img src="../images/L-G305-LS.jpg" alt="imgshopproducts">
+                </div>
+                <div class="brandshoppro">
+                    <span><strong>Logitech </strong><i class="fas fa-registered"></i></span>
+                </div>
+                <div class="nameshoppro">
+                    <p>Mouse Gamer G305 Ligthspeed Wireless Negro</p>
+                </div>
+                <div class="boxnumdeleteshoppro">
+                    <div id="contcontainer">
+                        <button id="btndecrementar" onclick="decrementar()">-</button>
+                        <span id="contador">2</span>
+                        <button id="btnincrementar" onclick="incrementar()">+</button>
+                      </div>
+                    <button type="reset">Eliminar</button>
+                </div>
+                <div class="valueshoppro">
+                    <div class="valueshoppro">
+                        <span><strong>$ 39.990</strong></span>
+                        <span>Valor unidad</span>
+                    </div>
+                    <div class="prevalueshoppro">
+                        <span><s>$ 40.990</s></span>
+                        <span>Valor unidad antes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shopproduct">
+                <div class="imgshoppro">
+                    <img src="../images/N-AF15-TG.jpg" alt="imgshopproducts">
+                </div>
+                <div class="brandshoppro">
+                    <span><strong>Asus </strong><i class="fas fa-registered"></i></span>
+                </div>
+                <div class="nameshoppro">
+                    <p>Notebook TUF Gaming F15 FX506 Intel Core i5-11400H NVIDIA RTX 2050 4GB 15.6" FHD 144Hz 8GB 512GB SSD Windows 11 Graphite Black</p>
+                </div>
+                <div class="boxnumdeleteshoppro">
+                    <div id="contcontainer">
+                        <button id="btndecrementar" onclick="decrementar()">-</button>
+                        <span id="contador">1</span>
+                        <button id="btnincrementar" onclick="incrementar()">+</button>
+                      </div>
+                    <button type="reset">Eliminar</button>
+                </div>
+                <div class="valueshoppro">
+                    <div class="valueshoppro">
+                        <span><strong>$ 649.990</strong></span>
+                        <span>Valor unidad</span>
+                    </div>
+                    <div class="prevalueshoppro">
+                        <span><s>$ 779.990</s></span>
+                        <span>Valor unidad antes</span>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <div>
+        <section id="summaryshop">
+            <div class="namesumm">
                 <span>RESUMEN</span>
             </div>
-            <div>
-                <div>
+            <div class="summary">
+                <div class="details">
                     <span>Total a pagar:</span>
-                    <span>$539.980</span>
+                    <span>$ 729.970</span>
                 </div>
-                <button type="button">Iniciar Pago</button>
+                <form action="" class="btnstartpayment">
+                    <button type="submit">Iniciar Pago</button>
+                </form>
             </div>
-            <div>
+            <div class="paymentmethods">
                 <p>Medios de pago disponibles</p>
-                <div>
+                <div class="methodsshop">
                     <!-- Hacer con grid y :nth-child() para posicionar por hijo -->
                     <!-- webpay - redcompra - santander - mercadopago - visa y demas - bancoestado -->
-                    <img src="../images/webpay.png" alt="mediospago">
-                    <img src="../images/redcompra.png" alt="mediospago">
-                    <img src="../images/santander.png" alt="mediospago">
-                    <img src="../images/mercadopago.png" alt="mediospago">
-                    <img src="../images/visademas.png" alt="mediospago">
-                    <img src="../images/bancoestado.png" alt="mediospago">
+                    <img src="../images/webpay.png" alt="mediospagoone">
+                    <img src="../images/redcompra.png" alt="mediospagotwo">
+                    <img src="../images/santander.png" alt="mediospagothree">
+                    <img src="../images/mercadopago.png" alt="mediospagofour">
+                    <img src="../images/visademas.png" alt="mediospagofive">
+                    <img src="../images/bancoestado.png" alt="mediospagosix">
                 </div>
             </div>
         </section>
