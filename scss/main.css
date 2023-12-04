@@ -305,12 +305,12 @@
   #cabezal .containercabezal .sesioncarro .container-fluid .modal .modal-dialog .modal-content .modal-body .table thead tr th {
     padding: 0;
     padding-right: 0;
-    font-size: small;
+    font-size: x-small;
     width: 20%;
   }
   #cabezal .containercabezal .sesioncarro .container-fluid .modal .modal-dialog .modal-content .modal-body .table tbody tr td {
     padding: 0;
-    font-size: small;
+    font-size: x-small;
     width: 20%;
   }
   #cabezal #menuopciones {
