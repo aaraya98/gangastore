@@ -26,6 +26,198 @@
         margin: 5px;
     }
 }
+/* Header de todas las paginas */
+/* Estilo para el head(incluye logo, bienvenida, buscador, sesion y carrito, menu y cuotas) */
+#cabezal{
+    .containercabezal{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0px;
+        border-bottom: 1px solid #dedede;
+        background-color: rgba(22, 196, 88, 0.4);
+        .logohead{
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            height: 100%;
+            a{
+                img{
+                    width: 100px;
+                    height: 100px;
+                    padding-right: 20%;
+                }
+            }
+        }
+        .logohead:hover{
+            cursor: pointer;
+        }
+        .presearch{
+            display: block;
+            width: 40%;
+            .presentation{
+                h1{
+                    text-align: start;
+                    /* font-size: 1.4rem; */
+                    font-size: clamp(0.6rem, 1vw, 1.5rem);
+                    word-wrap: break-word;
+                }
+            }
+            .buscador{
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 10px;
+                input{
+                    width: 70%;
+                    height: 35px;
+                    border-radius: 5px;
+                    padding: 8px;
+                }
+                button{
+                    width: 11%;
+                    border-radius: 5px;
+                    background-color: #47069698;
+                    color: #fff;
+                    i:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+        .sesioncarro {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            gap: 10px;
+            .seca{
+                overflow: hidden;
+                width: 45%;
+                height: 2rem;
+                border-radius: 10px;
+                background-color: #47069698;
+                border: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    span{
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+                a:hover{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 100%;
+                    transition: 0.1s;
+                }
+            }
+            .separadorseca{
+                font-size: 1.4rem;
+            }
+            .container-fluid{
+                .btncarro{
+                    width: 45%;
+                    span{
+                        font-size: 100%;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+                .btncarro:hover{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 100%;
+                    transition: 0.1s;
+                }
+                .modal{
+                    .modal-dialog{
+                        .modal-content{
+                            .modal-body{
+                                .table{
+                                    tbody{
+                                        tr{
+                                            td:last-child{
+                                                button{
+                                                    i{
+                                                        color: red;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .modal-footer{
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #menuopciones{
+        background-color: rgba(0, 0, 0, 0.11);
+        .checkbtn{
+            cursor: pointer;
+            display: none;
+        }
+        ul{
+            display: inline-flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            list-style: none;
+            width: 100%;
+            padding: 0;
+            li{
+                width: 12.5%;
+                padding-top: 1%;
+                text-align: center;
+                a{
+                    font-size: 75%;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #4a3866;
+                    transition: all 0.3s;
+                }
+                a:hover{
+                    color: #470696;
+                    font-family: italic;
+                    transition: all 0.1s;
+                }
+                i{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+            li:hover{
+                border-bottom: 3px solid #470696;
+                color: #470696;
+                font-style: italic;
+                font-size: large;
+                transition: all 0.1s;
+            }
+        }
+    }
+    .cuotas{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        a{
+            display: block;
+            img{
+                width: 100%;
+                height: 3rem;
+            }
+        }
+        a:nth-child(2){
+            display: none;
+        }
+    }
+}
 
 /* Index */
 /* Slider Index */
@@ -115,6 +307,423 @@
         }
     }
 }
+/* Sección de ofertas(ZG-COMPUTACIÓN-COMPONENTES) */
+.ofertasproduct{
+    width: 100%;
+    margin-top: 2rem;
+    .products{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 15px;
+        padding: 0;
+        gap: 1%;
+        .product{
+            list-style: none;
+            width: 15%;
+            height: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            .productinfo{
+                color: #333;
+                text-decoration: none;
+                .producttrademark{
+                    margin-bottom: 0.5rem;
+                }
+                .productname{
+                    width: 100%;
+                    height: auto;
+                    p{
+                        width: 100%;
+                        height: 2.8rem;
+                        overflow: hidden;
+                    }
+                }
+                .skuunits{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    font-size: 0.6rem;
+                    margin-top: 0.5rem;
+                    opacity: 0.8;
+                    .productunits{
+                        text-align: end;
+                        span{
+                            padding-right: 10%;
+                        }
+                    }
+                }
+                .productimg{
+                    text-align: center;
+                    img{
+                        width: 95%;
+                        height: auto;
+                    }
+                }
+            }
+            .valuecart{
+                display: flex;
+                justify-content: space-between;
+                .value{
+                    padding-left: 5%;
+                    color: #333;
+                    text-decoration: none;
+                }
+                .cartplus{
+                    padding-right: 10%;
+                    color: #333;
+                    i{
+                        font-size: 2rem;
+                        height: 2.1rem;
+                    }
+                }
+            }
+        }
+        .product:hover{
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.2s;
+            width: 15.5%;
+        }
+    }
+}
+
+/*  */
+/* CSS generico de Login - recoveraccount - changepassword - contact - registeruser */
+#formcontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.08);
+    #sectionform{
+        background-color: #ffffff;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        width: 45%;
+        height: auto;
+        .nameform{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            h2{
+                color: #333;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+        .formulario{
+            margin-top: 35px;
+            div{
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input{
+                    width: 85%;
+                    margin-top: 15px;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                button{
+                    background-color: #470696;
+                    color: #fff;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    width: 40%;
+                }
+            }
+        }
+        .ayuda{
+            div{
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                span{
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                a{
+                    color: #007bff;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+/*  */
+/* Style for recoveryaccount */
+/* Sección para recuperar cuenta */
+#formcontainer{
+    #sectionform{
+        .secciones{
+            margin-top: 25px;
+            .formrecover{
+                margin-top: 15px;
+                input{
+                    width: 85%;
+                    height: auto;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+                button{
+                    background-color: #470696;
+                    color: #fff;
+                    width: 85%;
+                    height: 2.5rem;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .returnlogin{
+            text-align: start;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: start;
+        }
+    }
+}
+
+/*  */
+/* Style for contact */
+/* Sección para llenar formulario de contacto */
+#formcontainer{
+    #sectionform{
+        .formcontact{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, auto);
+            gap: 15px;
+            .formdata{
+                grid-column: span 1;
+                label{
+                    text-align: start;
+                    font-weight: bold;
+                    color: #555;
+                }
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                #motivo{
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+            }
+            .textareaform{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 5;
+                grid-row-end: 6;
+                #comentarios{
+                    background-color: #f0f0f0;
+                    resize: none;
+                    width: 100%;
+                    height: 15rem;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+            }
+            .senddata{
+                grid-column: span 2;
+                width: 100%;
+                height: auto;
+                button{
+                    background-color: #470696;
+                    color: #fff;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+/*  */
+/* Style for registeruser */
+/* Sección para llenar formulario del registro de usuario */
+#formcontainer{
+    #sectionformreguser{
+        background-color: #ffffff;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        width: 70%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2 auto);
+        justify-content: center;
+        align-items: center;
+        .formreguser{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3 auto);
+            width: 100%;
+            gap: 1%;
+            .reguserdataone{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                h3{
+                    font-weight: bold;
+                    margin: 25px;
+                    height: 4rem;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    label{
+                        height: 2rem;
+                    }
+                    input{
+                        width: 85%;
+                        margin-top: 5px;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .reguserdatatwo{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                h3{
+                    font-weight: bold;
+                    margin: 25px;
+                    height: 4rem;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    label{
+                        height: 2rem;
+                    }
+                    input{
+                        width: 85%;
+                        margin-top: 5px;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .reguserdatathree{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                h3{
+                    font-weight: bold;
+                    margin: 25px;
+                    height: 4rem;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    label{
+                        height: 2rem;
+                    }
+                    input{
+                        width: 85%;
+                        margin-top: 5px;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .reguserdatafour{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                width: 100%;
+                height: 10rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                button{
+                    background-color: #470696;
+                    color: #fff;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    width: 40%;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+                .returnlogin{
+                    width: 100%;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
 
 /* Footer de todas las paginas */
 /* Estilo para el footer(incluye logo con contacto, servicios e información de la empresa) */
@@ -127,7 +736,6 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
     height: auto;
-    margin-top: 25px;
     .pie{
         margin-top: 25px;
     }

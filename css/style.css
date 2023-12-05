@@ -30,179 +30,179 @@
 /* Header de todas las paginas */
 /* Estilo para el head(incluye logo, bienvenida, buscador, sesion y carrito, menu y cuotas) */
 /* Primera sección de logo, buscador y sesión con carrito */
-.containercabezal{
+/* .containercabezal{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 0px;
     border-bottom: 1px solid #dedede;
     background-color: rgba(22, 196, 88, 0.4);
-}
-.logohead{
+} */
+/* .logohead{
     display: flex;
     justify-content: center;
     width: 30%;
     height: 100%;
-}
-.logohead a img{
+} */
+/* .logohead a img{
     width: 100px;
     height: 100px;
     padding-right: 20%;
-}
-.logohead:hover{
+} */
+/* .logohead:hover{
     cursor: pointer;
-}
-.presearch{
+} */
+/* .presearch{
     display: block;
     width: 40%;
-}
-.presentation{
+} */
+/* .presentation{
     width: 195%;
-}
-.presentation h1{
-    text-align: start;
+} */
+/* .presentation h1{
+    text-align: start;*/
     /* font-size: 1.4rem; */
-    font-size: clamp(0.6rem, 1vw, 1.5rem);
+    /*font-size: clamp(0.6rem, 1vw, 1.5rem);
     word-wrap: break-word;
-}
-.buscador{
+} */
+/* .buscador{
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
-}
-.buscador input{
+} */
+/* .buscador input{
     width: 70%;
     height: 35px;
     border-radius: 5px;
     padding: 8px;
-}
-.buscador button{
+} */
+/* .buscador button{
     width: 11%;
     border-radius: 5px;
     background-color: #47069698;
     color: #fff;
-}
-.buscador button a{
+} */
+/* .buscador button a{
     text-decoration: none;
     color: black;
-}
-.buscador button a:hover{
+} */
+/* .buscador button i:hover{
     color: black;
-}
-.sesioncarro {
+} */
+/* .sesioncarro {
     width: 30%;
     display: flex;
     justify-content: center;
     justify-items: center;
     gap: 10px;
-}
-.separadorseca{
+} */
+/* .separadorseca{
     font-size: 1.4rem;
-}
-.seca{
+} */
+/* .seca{
     overflow: hidden;
     width: 45%;
     height: 2rem;
     border-radius: 10px;
     background-color: #47069698;
     border: none;
-}
-.seca a{
+} */
+/* .seca a{
     text-decoration: none;
     color: black;
-}
-.seca a span{
+} */
+/* .seca a span{
     padding-left: 5px;
     padding-right: 5px;
-}   
-.btncarro{
+}    */
+/* .btncarro{
     width: 45%;
-}
-.btncarro span{
+} */
+/* .btncarro span{
     font-size: 100%;
     padding-left: 5px;
     padding-right: 5px;
-}
-.table tbody tr td:last-child button i{
+} */
+/* .table tbody tr td:last-child button i{
     color: red;
-}
-.modal-content .modal-footer{
+} */
+/* .modal-content .modal-footer{
     justify-content: center;
     align-items: center;
-}
+} */
 /* Tuve que incluir este hover puesto que el boostrap tiene un hover de etiqueta y que vuelve las letras azules */
-.seca a:hover, .btncarro:hover{
+/* .seca a:hover, .btncarro:hover{
     text-decoration: none;
     color: white;
     font-size: 100%;
     transition: 0.1s;
-}
-.seca:hover, .btncarro:hover{
+} */
+/* .seca:hover, .btncarro:hover{
     width: 50%;
     height: 2.2rem;
     transition: 0.3s;
-}
+} */
 /* Segunda sección que es el menu completo */
 /* Estilo para el nav */
-#menuopciones{
+/* #menuopciones{
     background-color: rgba(0, 0, 0, 0.11);
-}
-.checkbtn{
+} */
+/* .checkbtn{
     cursor: pointer;
     display: none;
-}
-#menuopciones ul{
+} */
+/* #menuopciones ul{
     display: inline-flex;
     justify-content: center;
     margin-bottom: 10px;
     list-style: none;
     width: 100%;
-}
-#menuopciones ul li{
+} */
+/* #menuopciones ul li{
     width: 11%;
     padding-top: 1%;
     text-align: center;
-}
-#menuopciones ul li:hover{
+} */
+/* #menuopciones ul li:hover{
     border-bottom: 3px solid #470696;
     color: #470696;
     font-style: italic;
     font-size: large;
     transition: all 0.1s;
-}
-#menuopciones ul li a{
+} */
+/* #menuopciones ul li a{
     font-size: 75%;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a3866;
     transition: all 0.3s;
-}
-#menuopciones ul li a:hover{
+} */
+/* #menuopciones ul li a:hover{
     color: #470696;
     font-family: italic;
     transition: all 0.1s;
-}
-#menuopciones ul li i{
+} */
+/* #menuopciones ul li i{
     padding-left: 5px;
     padding-right: 5px;
-}
+} */
 /* Estilo para las cuotas */
-.cuotas{
+/* .cuotas{
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.8);
-}
-.cuotas a{
+} */
+/* .cuotas a{
     display: block;
-}
-.cuotas a:nth-child(2){
+} */
+/* .cuotas a:nth-child(2){
     display: none;
-}
-.cuotas img{
+} */
+/* .cuotas img{
     width: 100%;
     height: 3rem;
-}
+} */
 
 
 /* Esto esta comentado porque intente hacerlo por SASS */
@@ -298,11 +298,11 @@
     height: 100%;
 } */
 /* Sección de ofertas(ZG-COMPUTACIÓN-COMPONENTES) */
-.ofertasproduct{
+/* .ofertasproduct{
     width: 100%;
     margin-top: 2rem;
-}
-.products{
+} */
+/* .products{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,11 +313,11 @@
     margin-bottom: 15px;
     padding: 0;
     gap: 1%;
-}
-.productinfo{
+} */
+/* .productinfo{
     color: #333;
-}
-.product{
+} */
+/* .product{
     list-style: none;
     width: 15%;
     height: auto;
@@ -328,14 +328,14 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.2s;
     width: 15.5%;
-}
-.product a{
+} */
+/* .product a{
     text-decoration: none;
-}
-.producttrademark{
+} */
+/* .producttrademark{
     margin-bottom: 0.5rem;
-}
-.productname{
+} */
+/* .productname{
     width: 100%;
     height: auto;
 }
@@ -343,54 +343,54 @@
     width: 100%;
     height: 2.8rem;
     overflow: hidden;
-}
-.skuunits{
+} */
+/* .skuunits{
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 0.6rem;
     margin-top: 0.5rem;
     opacity: 0.8;
-}
-.productunits{
+} */
+/* .productunits{
     text-align: end;
-}
-.productunits span{
+} */
+/* .productunits span{
     padding-right: 10%;
-}
-.productimg{
+} */
+/* .productimg{
     text-align: center;
-}
-.productimg img{
+} */
+/* .productimg img{
     width: 95%;
-}
-.valuecart{
+} */
+/* .valuecart{
     display: flex;
     justify-content: space-between;
-}
-.value{
+} */
+/* .value{
     padding-left: 5%;
     color: #333;
 }
 .cartplus{
     padding-right: 10%;
     color: #333;
-}
-.cartplus i{
+} */
+/* .cartplus i{
     font-size: 2rem;
     height: 2.1rem;
-}
+} */
 
 /*  */
 /* CSS generico de Login - recoveraccount - changepassword - contact - registeruser */
-#formcontainer{
+/* #formcontainer{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.08);
-}
-#sectionform{
+} */
+/* #sectionform{
     background-color: #ffffff;
     padding: 20px;
     margin-top: 30px;
@@ -400,34 +400,34 @@
     text-align: center;
     width: 45%;
     height: auto;
-}
-.nameform{
+} */
+/* .nameform{
     margin-top: 20px;
     margin-bottom: 50px;
-}
-.nameform h2{
+} */
+/* .nameform h2{
     color: #333;
     text-align: center;
     font-weight: bold;
-}
-.formulario{
+} */
+/* .formulario{
     margin-top: 35px;
-}
-.formulario div{
+} */
+/* .formulario div{
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.formulario input{
+} */
+/* .formulario input{
     width: 85%;
     margin-top: 15px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-.formulario button{
+} */
+/* .formulario button{
     background-color: #470696;
     color: #fff;
     padding: 10px 15px;
@@ -435,32 +435,32 @@
     border-radius: 4px;
     cursor: pointer;
     width: 40%;
-}
+} */
 
 /*  */
 /* Style for login */
 /* Sección del login */
-.ayuda div{
+/* .ayuda div{
     margin-top: 10px;
     display: flex;
     justify-content: center;
-}
-.ayuda span{
+} */
+/* .ayuda span{
     display: block;
     margin-bottom: 5px;
 }
 .ayuda a{
     color: #007bff;
     padding-left: 5px;
-}
+} */
 
 /*  */
 /* Style for recoveryaccount */
 /* Sección para recuperar cuenta */
-.formrecover{
+/* .formrecover{
     margin-top: 15px;
-}
-.formrecover input{
+} */
+/* .formrecover input{
     width: 85%;
     height: auto;
     padding: 10px;
@@ -474,50 +474,49 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-
-}
-.secciones{
+} */
+/* .secciones{
     margin-top: 25px;
-}
-.returnlogin{
+} */
+/* .returnlogin{
     text-align: start;
     margin-top: 40px;
     margin-bottom: 20px;
     width: 100%;
     text-align: start;
-}
+} */
 
 /*  */
 /* Style for contact */
 /* Sección para llenar formulario de contacto */
-.formcontact{
+/* .formcontact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
     gap: 15px;
-}
-.formdata{
+} */
+/* .formdata{
     grid-column: span 1;
-}
-.formdata label{
+} */
+/* .formdata label{
     text-align: start;
     font-weight: bold;
     color: #555;
-}
-.formdata input, #motivo{
+} */
+/* .formdata input, #motivo{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-.textareaform{
+} */
+/* .textareaform{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
-}
-.textareaform textarea{
+} */
+/* .textareaform textarea{
     background-color: #f0f0f0;
     resize: none;
     width: 100%;
@@ -526,8 +525,8 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-.senddata{
+} */
+/* .senddata{
     grid-column: span 2;
     width: 100%;
     height: auto;
@@ -540,13 +539,13 @@
     border-radius: 4px;
     cursor: pointer;
     width: 40%;
-}
+} */
 
 
 /*  */
 /* Style for registeruser */
 /* Sección para llenar formulario del registro de usuario */
-#sectionformreguser{
+/* #sectionformreguser{
     background-color: #ffffff;
     padding: 20px;
     margin-top: 30px;
@@ -561,20 +560,20 @@
     grid-template-rows: repeat(2 auto);
     justify-content: center;
     align-items: center;
-}
-.formreguser{
+} */
+/* .formreguser{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3 auto);
     width: 100%;
     gap: 1%;
-}
-.formreguser h3{
+} */
+/* .formreguser h3{
     font-weight: bold;
     margin: 25px;
     height: 4rem;
-}
-.reguserdataone{
+} */
+/* .reguserdataone{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -603,8 +602,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.reguserdatafour button{
+} */
+/* .reguserdatafour button{
     background-color: #470696;
     color: #fff;
     padding: 10px 15px;
@@ -613,25 +612,25 @@
     cursor: pointer;
     width: 40%;
     margin-top: 25px;
-}
-.reguserdataone, .reguserdatatwo, .reguserdatathree{
+} */
+/* .reguserdataone, .reguserdatatwo, .reguserdatathree{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.2);
-}
-.reguserdataone div, .reguserdatatwo div, .reguserdatathree div{
+} */
+/* .reguserdataone div, .reguserdatatwo div, .reguserdatathree div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-.reguserdataone div label, .reguserdatatwo div label, .reguserdatathree div label{
+} */
+/* .reguserdataone div label, .reguserdatatwo div label, .reguserdatathree div label{
     height: 2rem;
-}
-.reguserdataone div input, .reguserdatatwo div input, .reguserdatathree div input{
+} */
+/* .reguserdataone div input, .reguserdatatwo div input, .reguserdatathree div input{
     width: 85%;
     margin-top: 5px;
     padding: 8px;
@@ -639,7 +638,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 20px;
-}
+} */
 
 /*  */
 /* Footer de todas las paginas */
