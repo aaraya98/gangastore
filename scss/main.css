@@ -196,6 +196,100 @@
   display: none;
 }
 
+/* Footer de todas las paginas */
+/* Estilo para el footer(incluye logo con contacto, servicios e información de la empresa) */
+#piepagina {
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: 1fr;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(22, 196, 88, 0.4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+}
+#piepagina .pie {
+  margin-top: 25px;
+}
+#piepagina .socialcontacto {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: auto;
+  margin-top: 25px;
+}
+#piepagina .socialcontacto .logofooter img {
+  width: 200px;
+  height: 200px;
+}
+#piepagina .socialcontacto .socialesmetodo {
+  padding: 10px;
+}
+#piepagina .ubicacion {
+  margin: auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#piepagina .ubicacion .ubi {
+  display: grid;
+  grid-template-columns: 0.15fr 0.85fr;
+  grid-template-rows: 0.2fr 0.8fr;
+  overflow: hidden;
+  width: 90%;
+  height: 100%;
+}
+#piepagina .ubicacion .ubi i {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 150%;
+}
+#piepagina .ubicacion .ubi h3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-left: 15px;
+  font-weight: bold;
+}
+#piepagina .ubicacion .ubi iframe {
+  margin: auto;
+  width: 95%;
+  height: 95%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+}
+#piepagina .serviciocliente {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 5%;
+  padding-right: 5%;
+}
+#piepagina .nosotros {
+  align-items: center;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-right: 10%;
+}
+#piepagina .serviciocliente a, #piepagina .nosotros a {
+  padding: 20px 0px 0px 20px;
+  font-size: larger;
+  display: block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+}
+#piepagina .serviciocliente h3, #piepagina .nosotros h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* Index */
 /* Slider Index */
 #sliderpromo {
@@ -381,329 +475,6 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.2s;
   width: 15.5%;
-}
-
-/*  */
-/* CSS generico de Login - recoveraccount - changepassword - contact - registeruser */
-#formcontainer {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.08);
-}
-#formcontainer #sectionform {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  width: 45%;
-  height: auto;
-}
-#formcontainer #sectionform .nameform {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-#formcontainer #sectionform .nameform h2 {
-  color: #333;
-  text-align: center;
-  font-weight: bold;
-}
-#formcontainer #sectionform .formulario {
-  margin-top: 35px;
-}
-#formcontainer #sectionform .formulario div {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#formcontainer #sectionform .formulario div input {
-  width: 85%;
-  margin-top: 15px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-#formcontainer #sectionform .formulario div button {
-  background-color: #470696;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 40%;
-}
-#formcontainer #sectionform .ayuda div {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-#formcontainer #sectionform .ayuda div span {
-  display: block;
-  margin-bottom: 5px;
-}
-#formcontainer #sectionform .ayuda div a {
-  color: #007bff;
-  padding-left: 5px;
-}
-
-/*  */
-/* Style for recoveryaccount */
-/* Sección para recuperar cuenta */
-#formcontainer #sectionform .secciones {
-  margin-top: 25px;
-}
-#formcontainer #sectionform .secciones .formrecover {
-  margin-top: 15px;
-}
-#formcontainer #sectionform .secciones .formrecover input {
-  width: 85%;
-  height: auto;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-#formcontainer #sectionform .secciones .formrecover button {
-  background-color: #470696;
-  color: #fff;
-  width: 85%;
-  height: 2.5rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-#formcontainer #sectionform .returnlogin {
-  text-align: start;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  width: 100%;
-  text-align: start;
-}
-
-/*  */
-/* Style for contact */
-/* Sección para llenar formulario de contacto */
-#formcontainer #sectionform .formcontact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, auto);
-  gap: 15px;
-}
-#formcontainer #sectionform .formcontact .formdata {
-  grid-column: span 1;
-}
-#formcontainer #sectionform .formcontact .formdata label {
-  text-align: start;
-  font-weight: bold;
-  color: #555;
-}
-#formcontainer #sectionform .formcontact .formdata input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-#formcontainer #sectionform .formcontact .formdata #motivo {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-#formcontainer #sectionform .formcontact .textareaform {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
-#formcontainer #sectionform .formcontact .textareaform #comentarios {
-  background-color: #f0f0f0;
-  resize: none;
-  width: 100%;
-  height: 15rem;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-#formcontainer #sectionform .formcontact .senddata {
-  grid-column: span 2;
-  width: 100%;
-  height: auto;
-}
-#formcontainer #sectionform .formcontact .senddata button {
-  background-color: #470696;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 40%;
-}
-
-/*  */
-/* Style for registeruser */
-/* Sección para llenar formulario del registro de usuario */
-#formcontainer #sectionformreguser {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  width: 70%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2 auto);
-  justify-content: center;
-  align-items: center;
-}
-#formcontainer #sectionformreguser .formreguser {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3 auto);
-  width: 100%;
-  gap: 1%;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdataone {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-#formcontainer #sectionformreguser .formreguser .reguserdataone h3 {
-  font-weight: bold;
-  margin: 25px;
-  height: 4rem;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdataone div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdataone div label {
-  height: 2rem;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdataone div input {
-  width: 85%;
-  margin-top: 5px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatatwo {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatatwo h3 {
-  font-weight: bold;
-  margin: 25px;
-  height: 4rem;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatatwo div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatatwo div label {
-  height: 2rem;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatatwo div input {
-  width: 85%;
-  margin-top: 5px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatathree {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatathree h3 {
-  font-weight: bold;
-  margin: 25px;
-  height: 4rem;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatathree div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatathree div label {
-  height: 2rem;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatathree div input {
-  width: 85%;
-  margin-top: 5px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatafour {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  width: 100%;
-  height: 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatafour button {
-  background-color: #470696;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 40%;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-#formcontainer #sectionformreguser .formreguser .reguserdatafour .returnlogin {
-  width: 100%;
-  text-align: start;
 }
 
 /* */
@@ -951,98 +722,327 @@
   margin: auto;
 }
 
-/* Footer de todas las paginas */
-/* Estilo para el footer(incluye logo con contacto, servicios e información de la empresa) */
-#piepagina {
-  display: grid;
-  grid-template-columns: repeat(4 1fr);
-  grid-template-rows: 1fr;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: rgba(22, 196, 88, 0.4);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+/*  */
+/* CSS generico de Login - recoveraccount - changepassword - contact - registeruser */
+#formcontainer {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.08);
 }
-#piepagina .pie {
+#formcontainer #sectionform {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 45%;
+  height: auto;
+}
+#formcontainer #sectionform .nameform {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#formcontainer #sectionform .nameform h2 {
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+#formcontainer #sectionform .formulario {
+  margin-top: 35px;
+}
+#formcontainer #sectionform .formulario div {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#formcontainer #sectionform .formulario div input {
+  width: 85%;
+  margin-top: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#formcontainer #sectionform .formulario div button {
+  background-color: #470696;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+}
+#formcontainer #sectionform .ayuda div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+#formcontainer #sectionform .ayuda div span {
+  display: block;
+  margin-bottom: 5px;
+}
+#formcontainer #sectionform .ayuda div a {
+  color: #007bff;
+  padding-left: 5px;
+}
+
+/*  */
+/* Style for recoveryaccount */
+/* Sección para recuperar cuenta */
+#formcontainer #sectionform .secciones {
   margin-top: 25px;
 }
-#piepagina .socialcontacto {
+#formcontainer #sectionform .secciones .formrecover {
+  margin-top: 15px;
+}
+#formcontainer #sectionform .secciones .formrecover input {
+  width: 85%;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#formcontainer #sectionform .secciones .formrecover button {
+  background-color: #470696;
+  color: #fff;
+  width: 85%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#formcontainer #sectionform .returnlogin {
+  text-align: start;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: start;
+}
+
+/*  */
+/* Style for registeruser */
+/* Sección para llenar formulario del registro de usuario */
+#formcontainer #sectionformreguser {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 70%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2 auto);
+  justify-content: center;
+  align-items: center;
+}
+#formcontainer #sectionformreguser .formreguser {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3 auto);
+  width: 100%;
+  gap: 1%;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdataone {
   grid-column-start: 1;
   grid-column-end: 2;
-  margin: auto;
-  margin-top: 25px;
-}
-#piepagina .socialcontacto .logofooter img {
-  width: 200px;
-  height: 200px;
-}
-#piepagina .socialcontacto .socialesmetodo {
-  padding: 10px;
-}
-#piepagina .ubicacion {
-  margin: auto;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#formcontainer #sectionformreguser .formreguser .reguserdataone h3 {
+  font-weight: bold;
+  margin: 25px;
+  height: 4rem;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdataone div {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
 }
-#piepagina .ubicacion .ubi {
-  display: grid;
-  grid-template-columns: 0.15fr 0.85fr;
-  grid-template-rows: 0.2fr 0.8fr;
-  overflow: hidden;
-  width: 90%;
-  height: 100%;
+#formcontainer #sectionformreguser .formreguser .reguserdataone div label {
+  height: 2rem;
 }
-#piepagina .ubicacion .ubi i {
+#formcontainer #sectionformreguser .formreguser .reguserdataone div input {
+  width: 85%;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatatwo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 150%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
-#piepagina .ubicacion .ubi h3 {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  font-size: 1.5rem;
-  margin: 0;
-  padding-left: 15px;
+#formcontainer #sectionformreguser .formreguser .reguserdatatwo h3 {
   font-weight: bold;
+  margin: 25px;
+  height: 4rem;
 }
-#piepagina .ubicacion .ubi iframe {
-  margin: auto;
-  width: 95%;
-  height: 95%;
+#formcontainer #sectionformreguser .formreguser .reguserdatatwo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatatwo div label {
+  height: 2rem;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatatwo div input {
+  width: 85%;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatathree {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatathree h3 {
+  font-weight: bold;
+  margin: 25px;
+  height: 4rem;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatathree div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatathree div label {
+  height: 2rem;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatathree div input {
+  width: 85%;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#formcontainer #sectionformreguser .formreguser .reguserdatafour {
   grid-column-start: 1;
   grid-column-end: 3;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
-  border-radius: 15px;
-}
-#piepagina .serviciocliente {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  margin-left: 5%;
-  padding-right: 5%;
-}
-#piepagina .nosotros {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  margin-right: 10%;
 }
-#piepagina .serviciocliente a, #piepagina .nosotros a {
-  padding: 20px 0px 0px 20px;
-  font-size: larger;
-  display: block;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.9);
+#formcontainer #sectionformreguser .formreguser .reguserdatafour button {
+  background-color: #470696;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-#piepagina .serviciocliente h3, #piepagina .nosotros h3 {
-  font-size: 1.5rem;
+#formcontainer #sectionformreguser .formreguser .reguserdatafour .returnlogin {
+  width: 100%;
+  text-align: start;
+}
+
+/*  */
+/* Style for contact */
+/* Sección para llenar formulario de contacto */
+#formcontainer #sectionform .formcontact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 15px;
+}
+#formcontainer #sectionform .formcontact .formdata {
+  grid-column: span 1;
+}
+#formcontainer #sectionform .formcontact .formdata label {
+  text-align: start;
   font-weight: bold;
+  color: #555;
+}
+#formcontainer #sectionform .formcontact .formdata input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#formcontainer #sectionform .formcontact .formdata #motivo {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#formcontainer #sectionform .formcontact .textareaform {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+#formcontainer #sectionform .formcontact .textareaform #comentarios {
+  background-color: #f0f0f0;
+  resize: none;
+  width: 100%;
+  height: 15rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#formcontainer #sectionform .formcontact .senddata {
+  grid-column: span 2;
+  width: 100%;
+  height: auto;
+}
+#formcontainer #sectionform .formcontact .senddata button {
+  background-color: #470696;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
 }
 
 /* Responsive de la pagina web como maximo 750px */

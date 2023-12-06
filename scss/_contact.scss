@@ -1,0 +1,65 @@
+/*  */
+/* Style for contact */
+/* Sección para llenar formulario de contacto */
+#formcontainer{
+    #sectionform{
+        .formcontact{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, auto);
+            gap: 15px;
+            .formdata{
+                grid-column: span 1;
+                label{
+                    text-align: start;
+                    font-weight: bold;
+                    color: #555;
+                }
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                #motivo{
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+            }
+            .textareaform{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 5;
+                grid-row-end: 6;
+                #comentarios{
+                    background-color: #f0f0f0;
+                    resize: none;
+                    width: 100%;
+                    height: 15rem;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+            }
+            .senddata{
+                grid-column: span 2;
+                width: 100%;
+                height: auto;
+                button{
+                    background-color: #470696;
+                    color: #fff;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
