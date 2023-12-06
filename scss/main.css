@@ -706,6 +706,251 @@
   text-align: start;
 }
 
+/* */
+/* Style for shoppingcart */
+/* Sección que muestra lo que se guardo en el carrito de compras */
+#containershoppingcart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#containershoppingcart #containershopcart {
+  width: 96%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: repeat(2 auto);
+}
+#containershoppingcart #containershopcart #shopproducts {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  gap: 10px;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct {
+  border-radius: 5px;
+  width: 98%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3 auto);
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .imgshoppro {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .imgshoppro img {
+  width: 100%;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .brandshoppro {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 10px;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .nameshoppro {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .nameshoppro p {
+  font-size: small;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  padding-left: 15px;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro #contcontainer {
+  padding-right: 15px;
+  height: 100%;
+  width: 30%;
+  padding-top: 5px;
+  text-align: center;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro #contcontainer #btndecrementar {
+  background-color: #586468;
+  color: white;
+  padding: 3px;
+  font-size: larger;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro #contcontainer #contador {
+  font-size: larger;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro #contcontainer #btnincrementar {
+  background-color: #00ff51;
+  color: black;
+  padding: 3px;
+  font-size: larger;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro .btndeleteshop {
+  width: 70%;
+  height: 98%;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro .btndeleteshop button {
+  background-color: rgba(250, 0, 0, 0.8784313725);
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: larger;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  margin: auto;
+  height: 90%;
+  border-left: 3px dashed rgba(0, 0, 0, 0.5);
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro .valueshoppro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro .valueshoppro span:nth-child(2) {
+  font-size: small;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro .prevalueshoppro {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+#containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro .prevalueshoppro span:nth-child(2) {
+  font-size: small;
+}
+#containershoppingcart #containershopcart #summaryshop {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 98%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+#containershoppingcart #containershopcart #summaryshop .namesumm {
+  margin: auto;
+  text-align: center;
+  width: 95%;
+  padding: 15px;
+  border-bottom: 3px dashed rgba(0, 0, 0, 0.5);
+}
+#containershoppingcart #containershopcart #summaryshop .summary {
+  margin: auto;
+  width: 95%;
+  padding: 15px;
+  border-bottom: 3px dashed rgba(0, 0, 0, 0.5);
+}
+#containershoppingcart #containershopcart #summaryshop .summary .details {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+#containershoppingcart #containershopcart #summaryshop .summary .btnstartpayment {
+  display: flex;
+  justify-content: center;
+}
+#containershoppingcart #containershopcart #summaryshop .summary .btnstartpayment button {
+  background-color: #470696;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+}
+#containershoppingcart #containershopcart #summaryshop .summary .btnstartpayment button:hover {
+  width: 50%;
+  height: 3.5rem;
+  font-size: large;
+  background-color: darkgreen;
+  transition: all 0.3s;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods {
+  margin: auto;
+  width: 95%;
+  padding: 15px;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods p {
+  padding-top: 10px;
+  font-weight: bold;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop {
+  display: grid;
+  grid-template-columns: repeat(2 auto);
+  grid-template-rows: repeat(3 1fr);
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img {
+  width: 150px;
+  height: 50px;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img:nth-child(2) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: auto;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: auto;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img:nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto;
+}
+#containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img:nth-child(6) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: auto;
+}
+
 /* Footer de todas las paginas */
 /* Estilo para el footer(incluye logo con contacto, servicios e información de la empresa) */
 #piepagina {
@@ -1082,6 +1327,64 @@
     grid-row: span 4;
     height: auto;
   }
+  /* Responsive de shoppingcart */
+  #containershoppingcart #containershopcart {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 auto);
+  }
+  #containershoppingcart #containershopcart #shopproducts {
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .imgshoppro {
+    margin: auto;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro #contcontainer {
+    width: 45%;
+    text-align: start;
+    padding: 0;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro #contcontainer #btndecrementar {
+    font-size: medium;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro #contcontainer #btnincrementar {
+    font-size: medium;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro .btndeleteshop {
+    width: 55%;
+    height: 100%;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .boxnumdeleteshoppro .btndeleteshop button {
+    margin-bottom: 5px;
+    padding: 8px 10px;
+    font-size: small;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro {
+    margin-left: 3px;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro .valueshoppro {
+    font-size: small;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  #containershoppingcart #containershopcart #shopproducts .shopproduct .valueshopcartpro .prevalueshoppro {
+    font-size: small;
+    margin-left: 10px;
+  }
+  #containershoppingcart #containershopcart #summaryshop {
+    margin: auto;
+    margin-bottom: 5px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
   /* Footer de todas las paginas */
   #piepagina {
     display: grid;
@@ -1185,6 +1488,11 @@
     width: 80%;
     height: 2.2rem;
     transition: 0.3s;
+  }
+  /* Responsive de shoppingcart */
+  #containershoppingcart #containershopcart #summaryshop .paymentmethods .methodsshop img {
+    width: 75px;
+    height: 40px;
   }
   /* Footer de todas las paginas */
   #piepagina .ubicacion .ubi h3 {
