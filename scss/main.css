@@ -478,6 +478,147 @@
 }
 
 /* */
+/* Style for categoriesproducts */
+/* */
+/* Style for product */
+#productcontainer {
+  width: 100%;
+  height: auto;
+}
+#productcontainer .proproduct {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: repeat(2 auto);
+}
+#productcontainer .proproduct .imagesproproduct {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#productcontainer .proproduct .imagesproproduct .mainimgproproduct {
+  border: 1px solid black;
+  width: 90%;
+  height: auto;
+}
+#productcontainer .proproduct .imagesproproduct .mainimgproproduct img {
+  width: 100%;
+}
+#productcontainer .proproduct .imagesproproduct .secondaryimgproproduct {
+  margin-top: 10px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#productcontainer .proproduct .imagesproproduct .secondaryimgproproduct img {
+  border: 1px solid black;
+}
+#productcontainer .proproduct .detallesproproduct {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 90%;
+}
+#productcontainer .proproduct .detallesproproduct .brandproproduct {
+  display: flex;
+  gap: 5px;
+}
+#productcontainer .proproduct .detallesproproduct .skuunits {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+#productcontainer .proproduct .detallesproproduct .valueproproduct .currentvalueproproduct span:first-child, #productcontainer .proproduct .detallesproproduct .valueproproduct .prevalueproproduct span:first-child {
+  font-size: larger;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct {
+  display: flex;
+  padding-left: 15px;
+  margin-top: 25px;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct #contcontainer {
+  padding-right: 15px;
+  height: 100%;
+  width: 30%;
+  padding-top: 5px;
+  text-align: center;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct #contcontainer #btndecrementar {
+  background-color: #586468;
+  color: white;
+  padding: 3px;
+  font-size: larger;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct #contcontainer #contador {
+  font-size: larger;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct #contcontainer #btnincrementar {
+  background-color: #00ff51;
+  color: black;
+  padding: 3px;
+  font-size: larger;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct .btnstartpaymentproproduct {
+  width: 60%;
+  height: 4rem;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct .btnstartpaymentproproduct button {
+  background-color: rgba(71, 6, 150, 0.5960784314);
+  color: black;
+  font-weight: bold;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: small;
+  width: 90%;
+  height: 80%;
+}
+#productcontainer .proproduct .detallesproproduct .boxnumproproduct .btnstartpaymentproproduct button:hover {
+  background-color: #0d8a2c;
+  color: white;
+  font-size: large;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+#productcontainer .proproduct .detallesproproduct .informationproproduct {
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#productcontainer .proproduct .detallesproproduct .informationproproduct div:first-child {
+  margin-top: 20px;
+}
+#productcontainer .proproduct .detallesproproduct .informationproproduct div {
+  padding-left: 10px;
+}
+#productcontainer .proproduct .descriptionproproduct {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+}
+#productcontainer .proproduct .descriptionproproduct .acordeondescriptionpropro {
+  width: 100%;
+}
+#productcontainer .proproduct .descriptionproproduct .acordeondescriptionpropro .nav-item a {
+  margin: 3px;
+}
+#productcontainer .proproduct .descriptionproproduct .tab-content .tab-pane img {
+  width: 100%;
+}
+
+/* */
 /* Style for shoppingcart */
 /* Sección que muestra lo que se guardo en el carrito de compras */
 #containershoppingcart {
@@ -1206,6 +1347,12 @@
     height: 13rem;
   }
   /* Promociones de imagenes */
+  #namepromocion {
+    width: 100%;
+  }
+  #namepromocion .namepromo {
+    width: 98%;
+  }
   #promociones {
     width: 98%;
     display: grid;

@@ -174,6 +174,12 @@
         height: 13rem;
     }
     /* Promociones de imagenes */
+    #namepromocion{
+        width: 100%;
+        .namepromo{
+            width: 98%;
+        }
+    }
     #promociones{
         width: 98%;
         display: grid;
