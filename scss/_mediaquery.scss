@@ -250,6 +250,10 @@
             .product:nth-child(5), .product:nth-child(6){
                 display: none;
             }
+            .product:hover{
+                width: 25%;
+                transition: all 0.2s;
+            }
         }
     }
 

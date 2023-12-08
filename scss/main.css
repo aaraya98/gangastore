@@ -473,8 +473,8 @@
 }
 .ofertasproduct .products .product:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.2s;
   width: 15.5%;
+  transition: all 0.2s;
 }
 
 /* */
@@ -1414,6 +1414,10 @@
   }
   .ofertasproduct .products .product:nth-child(5), .ofertasproduct .products .product:nth-child(6) {
     display: none;
+  }
+  .ofertasproduct .products .product:hover {
+    width: 25%;
+    transition: all 0.2s;
   }
   /* Responsive de Login- Contact - Changepassword - registeruser - recoveraccount */
   #formcontainer #sectionform {
