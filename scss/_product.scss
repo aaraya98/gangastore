@@ -17,6 +17,7 @@
             grid-column-end: 2;
             grid-row-start: 1;
             grid-row-end: 2;
+            width: 100%;
             .mainimgproproduct{
                 border: 1px solid black;
                 width: 90%;
@@ -50,6 +51,9 @@
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 15px;
+                .productunits{
+                    padding-right: 25px;
+                }
             }
             .valueproproduct{
                 .currentvalueproproduct, .prevalueproproduct{
