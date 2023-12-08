@@ -1,2 +1,36 @@
 /* */
 /* Style for categoriesproducts */
+#containercategoriesproducts{
+    width: 100%;
+    height: auto;
+    #containercatproducts{
+        width: 94%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: auto;
+        .acordeoncatproducts{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .contcatproducts{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            .filtrosecundario{
+                padding: 10px;
+            }
+            .catproducts{
+                .products{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
