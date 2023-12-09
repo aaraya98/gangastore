@@ -433,6 +433,77 @@
         }
     }
 
+    /* Responsive de categoriesproducts */
+    #containercategoriesproducts{
+        #containercatproducts{
+            width: 98%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2 auto);
+            .acordeoncatproducts{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            .contcatproducts{
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                .filtrosecundario{
+                    margin: 0;
+                }
+                .catproducts{
+                    .products{
+                        .product{
+                            width: 24%;
+                            .productinfo{
+                                .producttrademark{
+                                    font-size: small;
+                                }
+                                .productname{
+                                    p{
+                                        font-size: x-small !important;
+                                    }
+                                }
+                                .skuunits{
+                                    display: flex;
+                                    .productsku{
+                                        padding: 0;
+                                        font-size: 0.4rem;
+                                        width: 60%;
+                                    }
+                                    .productunits{
+                                        font-size: 0.4rem;
+                                        width: 40%;
+                                        span{
+                                            padding: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .valuecart{
+                                .value{
+                                    .productvalue{
+                                        font-size: xx-small !important;
+                                    }
+                                    .productprevalue{
+                                        font-size: xx-small !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pagforcat{
+                    .pagcat{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
 
     /* Footer de todas las paginas */
     #piepagina{
@@ -549,6 +620,44 @@
                         img{
                             width: 75px;
                             height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Responsive de categoriesproducts */
+    #containercategoriesproducts{
+        #containercatproducts{
+            .contcatproducts{
+                .catproducts{
+                    .products{
+                        .product{
+                            .productinfo{
+                                .productname{
+                                    p{
+                                        font-size: small;
+                                        height: 3.5rem;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            .valuecart{
+                                .value{
+                                    .productvalue{
+                                        font-size: small;
+                                    }
+                                    .productprevalue{
+                                        font-size: small;
+                                    }
+                                }
+                                .cartplus{
+                                    i{
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
