@@ -1,3 +1,12 @@
+/* mexin para display de columnas centradas */
+@mixin column-center() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 /*  */
 /* Style for registeruser */
 /* Sección para llenar formulario del registro de usuario */
@@ -23,16 +32,16 @@
             grid-template-rows: repeat(3 auto);
             width: 100%;
             gap: 1%;
+            /* Todo lo que este dentro de formreguser no tenga scroll en Y */
+            *{
+                overflow-y: hidden;
+            }
             .reguserdataone{
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 1;
                 grid-row-end: 2;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid rgba(0, 0, 0, 0.2);
+                @include column-center;
                 h3{
                     font-weight: bold;
                     margin: 25px;
@@ -63,11 +72,7 @@
                 grid-column-end: 3;
                 grid-row-start: 1;
                 grid-row-end: 3;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid rgba(0, 0, 0, 0.2);
+                @include column-center;
                 h3{
                     font-weight: bold;
                     margin: 25px;
@@ -98,11 +103,7 @@
                 grid-column-end: 2;
                 grid-row-start: 2;
                 grid-row-end: 3;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid rgba(0, 0, 0, 0.2);
+                @include column-center;
                 h3{
                     font-weight: bold;
                     margin: 25px;
@@ -135,10 +136,8 @@
                 grid-row-end: 4;
                 width: 100%;
                 height: 10rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include column-center;
+                border: none;
                 button{
                     background-color: #470696;
                     color: #fff;
