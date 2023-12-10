@@ -1740,6 +1740,11 @@
   }
   #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .producttrademark {
     font-size: small;
+    margin-bottom: 0;
+    height: 1.5rem;
+  }
+  #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .producttrademark span {
+    height: 1.4rem;
   }
   #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .productname p {
     font-size: x-small !important;
