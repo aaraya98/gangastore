@@ -3,9 +3,7 @@
 #information{
     width: 100%;
     height: auto;
-    display: flex;
-    align-self: center;
-    justify-content: center;
+    @include flexaligncontent(center);
     background-color: #470696;
     p{
         color: white;
@@ -35,9 +33,6 @@
                     padding-right: 20%;
                 }
             }
-        }
-        .logohead:hover{
-            cursor: pointer;
         }
         .presearch{
             display: block;
@@ -73,9 +68,7 @@
         }
         .sesioncarro {
             width: 30%;
-            display: flex;
-            justify-content: center;
-            justify-items: center;
+            @include flexaligncontent(center);
             gap: 10px;
             .seca{
                 overflow: hidden;
@@ -84,19 +77,22 @@
                 border-radius: 10px;
                 background-color: #47069698;
                 border: none;
+                &:hover{
+                    @include buttonsesioncarro;
+                }
                 a{
                     text-decoration: none;
                     color: black;
+                    &:hover{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 100%;
+                        transition: 0.1s;
+                    }
                     span{
                         padding-left: 5px;
                         padding-right: 5px;
                     }
-                }
-                a:hover{
-                    text-decoration: none;
-                    color: white;
-                    font-size: 100%;
-                    transition: 0.1s;
                 }
             }
             .separadorseca{
@@ -105,17 +101,18 @@
             .container-fluid{
                 .btncarro{
                     width: 45%;
+                    &:hover{
+                        @include buttonsesioncarro;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 100%;
+                        transition: 0.1s;
+                    }
                     span{
                         font-size: 100%;
                         padding-left: 5px;
                         padding-right: 5px;
                     }
-                }
-                .btncarro:hover{
-                    text-decoration: none;
-                    color: white;
-                    font-size: 100%;
-                    transition: 0.1s;
                 }
                 .modal{
                     .modal-dialog{
@@ -136,8 +133,7 @@
                                 }
                             }
                             .modal-footer{
-                                justify-content: center;
-                                align-items: center;
+                                @include flexaligncontent(center);
                             }
                         }
                     }
@@ -162,6 +158,11 @@
                 width: 12.5%;
                 padding-top: 1%;
                 text-align: center;
+                &:hover{
+                    border-bottom: 3px solid #470696;
+                    font-size: large;
+                    @include color-font;
+                }
                 a{
                     font-size: 75%;
                     text-decoration: none;
@@ -169,29 +170,19 @@
                     font-weight: 700;
                     color: #4a3866;
                     transition: all 0.3s;
-                }
-                a:hover{
-                    color: #470696;
-                    font-family: italic;
-                    transition: all 0.1s;
+                    &:hover{
+                        @include color-font;
+                    }
                 }
                 i{
                     padding-left: 5px;
                     padding-right: 5px;
                 }
             }
-            li:hover{
-                border-bottom: 3px solid #470696;
-                color: #470696;
-                font-style: italic;
-                font-size: large;
-                transition: all 0.1s;
-            }
         }
     }
     .cuotas{
-        display: flex;
-        justify-content: center;
+        @include flexaligncontent(center);
         background-color: rgba(0, 0, 0, 0.8);
         a{
             display: block;

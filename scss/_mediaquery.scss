@@ -1,3 +1,102 @@
+/* Responsive de la pagina web como maximo 1100px */
+@media screen and (max-width: 1100px) {
+    /* Botones de inicio sesión y carrito */
+    #cabezal{
+        .containercabezal{
+            .sesioncarro{
+                .seca{
+                    overflow: hidden;
+                    width: 75%;
+                    &:hover{
+                        @include buttonseca;
+                    }
+                }
+                .container-fluid{
+                    .btncarro{
+                        width: 75%;
+                        &:hover {
+                            @include buttonseca;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Responsive de shoppingcart */
+    #containershoppingcart{
+        #containershopcart{
+            #summaryshop{
+                .paymentmethods{
+                    .methodsshop{
+                        img{
+                            width: 75px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Responsive de categoriesproducts */
+    #containercategoriesproducts{
+        #containercatproducts{
+            .contcatproducts{
+                .catproducts{
+                    .products{
+                        .product{
+                            .productinfo{
+                                .productname{
+                                    p{
+                                        font-size: small;
+                                        height: 3.5rem;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            .valuecart{
+                                .value{
+                                    .productvalue{
+                                        font-size: small;
+                                    }
+                                    .productprevalue{
+                                        font-size: small;
+                                    }
+                                }
+                                .cartplus{
+                                    i{
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer de todas las paginas */
+    #piepagina{
+        .ubicacion{
+            .ubi{
+                h3{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .serviciocliente, .nosotros{
+            h3{
+                font-size: 1.1rem;
+            }
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
 /* Responsive de la pagina web como maximo 750px */
 @media screen and (max-width: 750px){
     /* Header de todas las paginas */
@@ -6,10 +105,7 @@
         grid-template-rows: repeat(2 1fr);
         grid-template-rows: repeat(4 auto);
         .containercabezal{
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 3;
+            @include positiongrid(1,3,1,3);
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2 auto);
@@ -19,17 +115,12 @@
             .presearch{
                 width: 100%;
                 margin-top: 20px;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
+                @include positiongrid(1,2,2,3);
                 .presentation{
                     display: none;
                 }
                 .buscador{
-                    display: flex;
-                    justify-content: center;
-                    align-content: center;
+                    @include flexaligncontent(center);
                     width: 100%;
                     margin-top: 0;
                     input{
@@ -44,10 +135,7 @@
                 }
             }
             .sesioncarro{
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2;
+                @include positiongrid(1,2,1,2);
                 width: 100%;
                 margin-top: 10px;
                 margin-left: 20px;
@@ -60,7 +148,7 @@
                     padding: 0;
                     width: 30%;
                     .btncarro{
-                        width: 100% !important;
+                        width: 100%;
                     }
                     .modal{
                         .modal-dialog{
@@ -97,10 +185,7 @@
             }
         }
         #menuopciones{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 3;
+            @include positiongrid(1,2,1,3);
             background-color: rgba(22, 196, 88, 0);
             .label{
                 text-align: center;
@@ -150,10 +235,7 @@
             }
         }
         .cuotas{
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 4;
-            grid-row-end: 5;
+            @include positiongrid(1,3,4,5);
             a{
                 display: block;
                 img{
@@ -187,20 +269,14 @@
         grid-template-rows: repeat(3 auto);
         gap: 0.5%;
         .promocionone{
-            grid-column: span 1;
-            grid-row-start: 1;
-            grid-row-end: 2;
+            @include positiongrid(1,2,1,2);
             gap: 1%;
         }
         .promociontwo{
-            grid-column: span 1;
-            grid-row-start: 2;
-            grid-row-end: 3;
+            @include positiongrid(1,2,2,3);
         }
         .promocionthree{
-            grid-column: span 1;
-            grid-row-start: 3;
-            grid-row-end: 4;
+            @include positiongrid(1,2,3,4);
         }
     }
     /* Equipos en promoción */
@@ -287,16 +363,17 @@
                 }
             }
             .formcontact{
+                display: grid;
                 grid-template-columns: 1fr;
+                grid-template-rows: repeat(9 auto);
                 .formdata{
-                    grid-column: span 2;
+                    @include positiongrid(1,2,auto,auto);
                 }
                 .textareaform{
-                    grid-row-start: 8;
-                    grid-row-end: 9;
+                    @include positiongrid(1,2,8,9);
                 }
-                .senddata button{
-                    grid-column: span 2;
+                .senddata{
+                    @include positiongrid(1,2,9,10);
                 }
             }
         }
@@ -308,23 +385,19 @@
                 grid-template-rows: repeat(4 auto);
                 height: auto;
                 .reguserdataone{
-                    grid-column: span 1;
-                    grid-row: span 1; 
+                    @include positiongrid(1,2,1,2); 
                     height: auto;
                 }
                 .reguserdatatwo{
-                    grid-column: span 1;
-                    grid-row: span 2;
+                    @include positiongrid(1,2,2,3);
                     height: auto;
                 }
                 .reguserdatathree{
-                    grid-column: span 1;
-                    grid-row: span 3;
+                    @include positiongrid(1,2,3,4);
                     height: auto;
                 }
                 .reguserdatafour{
-                    grid-column: span 1;
-                    grid-row: span 4; 
+                    @include positiongrid(1,2,4,5);
                     height: auto;
                 }
             }
@@ -340,10 +413,7 @@
             grid-template-rows: repeat(2 auto);
             #shopproducts{
                 margin: auto;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2;
+                @include positiongrid(1,2,1,2);
                 .shopproduct{
                     .imgshoppro{
                         margin: auto;
@@ -371,6 +441,7 @@
                         }
                     }
                     .valueshopcartpro{
+                        height: 100%;
                         margin-left: 3px;
                         .valueshoppro{
                             font-size: small;
@@ -388,10 +459,7 @@
             #summaryshop{
                 margin: auto;
                 margin-bottom: 5px;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
+                @include positiongrid(1,2,2,3);
             }
         }    
     }
@@ -404,10 +472,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3 auto);
             .imagesproproduct{
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2;
+                @include positiongrid(1,2,1,2);
                 margin-bottom: 25px;
                 .mainimgproproduct{
                     width: 100%;
@@ -418,17 +483,11 @@
                 }
             }
             .detallesproproduct{
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
+                @include positiongrid(1,2,2,3);
                 width: 100%;
             }
             .descriptionproproduct{
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 3;
-                grid-row-end: 4;
+                @include positiongrid(1,2,3,4);
             }
         }
     }
@@ -441,16 +500,10 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2 auto);
             .acordeoncatproducts{
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2;
+                @include positiongrid(1,2,1,2);
             }
             .contcatproducts{
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 3;
+                @include positiongrid(1,2,2,3);
                 .filtrosecundario{
                     margin: 0;
                 }
@@ -463,16 +516,16 @@
                                     margin-bottom: 0;
                                     width: auto;
                                     height: 1.5rem;
-                                    font-size: small !important;
+                                    font-size: small;
                                     span{
                                         .fa-registered{
-                                            font-size: xx-small !important;
+                                            font-size: xx-small;
                                         }
                                     }
                                 }
                                 .productname{
                                     p{
-                                        font-size: x-small !important;
+                                        font-size: x-small;
                                     }
                                 }
                                 .skuunits{
@@ -494,10 +547,10 @@
                             .valuecart{
                                 .value{
                                     .productvalue{
-                                        font-size: xx-small !important;
+                                        font-size: xx-small;
                                     }
                                     .productprevalue{
-                                        font-size: xx-small !important;
+                                        font-size: xx-small;
                                     }
                                 }
                             }
@@ -522,10 +575,7 @@
             margin-top: 20px;
             width: 95%;
             border-bottom: 2px dashed black;
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 1;
-            grid-row-end: 2;
+            @include positiongrid(1,2,1,2);
             display: flex;
             justify-content: center;
             align-content: center;
@@ -552,10 +602,7 @@
             }
         }
         .ubicacion{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 2;
-            grid-row-end: 3;
+            @include positiongrid(1,2,2,3);
             border-bottom: 2px dashed black;
             width: 95%;
             .ubi{
@@ -580,115 +627,14 @@
             }
         }
         .serviciocliente{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 4;
+            @include positiongrid(1,2,3,4);
             padding-left: 5%;
         }
         .nosotros{
-            grid-column-start: 1;
-            grid-column-end: 5;
-            grid-row-start: 4;
-            grid-row-end: 5;
+            @include positiongrid(1,2,4,5);
             margin-left: 5%;
             padding-left: 5%;
             margin-bottom: 20px;
-        }
-    }
-}
-
-/* Responsive de la pagina web como maximo 1100px */
-@media screen and (max-width: 1100px) {
-    /* Botones de inicio sesión y carrito */
-    .seca{
-        overflow: hidden;
-        width: 75%;
-        &:hover{
-            width: 80%;
-            height: 2.2rem;
-            transition: 0.3s;
-        }
-    }
-    .btncarro{
-        width: 75%;
-        &:hover {
-            width: 80%;
-            height: 2.2rem;
-            transition: 0.3s;
-        }
-    }
-
-    /* Responsive de shoppingcart */
-    #containershoppingcart{
-        #containershopcart{
-            #summaryshop{
-                .paymentmethods{
-                    .methodsshop{
-                        img{
-                            width: 75px;
-                            height: 40px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /* Responsive de categoriesproducts */
-    #containercategoriesproducts{
-        #containercatproducts{
-            .contcatproducts{
-                .catproducts{
-                    .products{
-                        .product{
-                            .productinfo{
-                                .productname{
-                                    p{
-                                        font-size: small;
-                                        height: 3.5rem;
-                                        margin: 0;
-                                    }
-                                }
-                            }
-                            .valuecart{
-                                .value{
-                                    .productvalue{
-                                        font-size: small;
-                                    }
-                                    .productprevalue{
-                                        font-size: small;
-                                    }
-                                }
-                                .cartplus{
-                                    i{
-                                        font-size: 1.4rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /* Footer de todas las paginas */
-    #piepagina{
-        .ubicacion{
-            .ubi{
-                h3{
-                    font-size: 1.1rem;
-                }
-            }
-        }
-        .serviciocliente, .nosotros{
-            h3{
-                font-size: 1.1rem;
-            }
-            a{
-                font-size: 1rem;
-            }
         }
     }
 }
