@@ -462,7 +462,13 @@
                                 .producttrademark{
                                     font-size: small;
                                     margin-bottom: 0;
-                                    height: 1.5rem;
+                                    height: auto;
+                                    span{
+                                        height: auto;
+                                        i{
+                                            height: auto;
+                                        }
+                                    }
                                 }
                                 .productname{
                                     p{
