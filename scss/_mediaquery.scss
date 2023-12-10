@@ -488,6 +488,14 @@
             }
             .descriptionproproduct{
                 @include positiongrid(1,2,3,4);
+                .acordeondescriptionpropro{
+                    .nav-item{
+                        .nav-link{
+                            padding: 5px;
+                            font-size: small;
+                        }
+                    }
+                }
             }
         }
     }

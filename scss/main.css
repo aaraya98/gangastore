@@ -1825,6 +1825,10 @@
     grid-row-start: 3;
     grid-row-end: 4;
   }
+  #productcontainer .proproduct .descriptionproproduct .acordeondescriptionpropro .nav-item .nav-link {
+    padding: 5px;
+    font-size: small;
+  }
   /* Responsive de categoriesproducts */
   #containercategoriesproducts #containercatproducts {
     width: 98%;
