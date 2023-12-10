@@ -1741,9 +1741,7 @@
   #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .producttrademark {
     margin-bottom: 0;
     height: 1.8rem;
-  }
-  #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .producttrademark span i {
-    font-size: xx-small !important;
+    font-size: x-small !important;
   }
   #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .productname p {
     font-size: x-small !important;
