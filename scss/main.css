@@ -1743,11 +1743,9 @@
     margin-bottom: 0;
     height: 1.8rem;
   }
-  #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .producttrademark span {
-    height: 1.8rem !important;
-  }
   #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .producttrademark span i {
     height: auto;
+    font-size: x-small;
   }
   #containercategoriesproducts #containercatproducts .contcatproducts .catproducts .products .product .productinfo .productname p {
     font-size: x-small !important;
