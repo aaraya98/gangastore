@@ -3,9 +3,7 @@
 /* Sección que muestra lo que se guardo en el carrito de compras */
 #containershoppingcart{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include flexaligncontent(center);
     #containershopcart{
         width: 96%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);

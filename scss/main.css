@@ -19,6 +19,7 @@
 /* mixin para hover al pasar por el nav*/
 /* mixin para botones de sesion carrito */
 /* mixin para botones de sesion carrito */
+/* mexin para display de columnas centradas de registeruser*/
 /* Information de todas las paginas */
 /* Estilo para la información */
 #information {
@@ -799,8 +800,8 @@
 #containershoppingcart {
   width: 100%;
   display: flex;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
 }
 #containershoppingcart #containershopcart {
   width: 96%;
@@ -1140,7 +1141,6 @@
   text-align: start;
 }
 
-/* mexin para display de columnas centradas */
 /*  */
 /* Style for registeruser */
 /* Sección para llenar formulario del registro de usuario */
