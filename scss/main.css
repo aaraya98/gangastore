@@ -1478,6 +1478,9 @@
   #cabezal .containercabezal .sesioncarro .seca {
     width: 30%;
   }
+  #cabezal .containercabezal .sesioncarro .seca:hover {
+    width: 30%;
+  }
   #cabezal .containercabezal .sesioncarro .container-fluid {
     text-align: center;
     margin: 0;
@@ -1505,10 +1508,12 @@
     width: 20%;
   }
   #cabezal #menuopciones {
+    width: 63%;
+    height: auto;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
     background-color: rgba(22, 196, 88, 0);
   }
   #cabezal #menuopciones .label {
